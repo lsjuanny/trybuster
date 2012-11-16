@@ -4,8 +4,10 @@ start:
 test-node:
 	@./node_modules/buster/bin/buster \
 		test \
-		-e node
+		-e node \
+		-r specification
 test-browser:
 	@./node_modules/buster/bin/buster \
 		test \
-		-e browser
+		-e browser \
+		-r specification
