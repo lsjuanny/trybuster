@@ -1,7 +1,7 @@
 var config = module.exports;
 
 config["My tests"] = {
-    extensions: [ require("buster-coverage") ],
+    extensions: [ require("./myCoverage") ],
     rootPath: "../",
     environment: "node", // or "node"
     sources: [
@@ -14,7 +14,7 @@ config["My tests"] = {
 }
 
 config["browser test"] = {
-    extensions: [ require("buster-coverage") ],
+    extensions: [ require("./myCoverage") ],
     rootPath: "../",
     environment: "browser", // or "node"
     sources: [
@@ -25,3 +25,4 @@ config["browser test"] = {
         "test/*-client-test.js"
     ]
 }
+
